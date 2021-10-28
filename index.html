@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Главная</title>
+</head>
+<body class="body">
+	<!-- Шапка сайта -->
+	<header>
+		<div class="logo"></div>
+			
+		
+		
+			<nav class="topnav" id="myTopnav">
+			
+				<a href="#promotions" class="active">Акции</a>
+				<a href="#search">Поиск</a>
+				<a href="booking.html">Управление бронированием</a>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+			
+			</nav>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>		
+		
+
+	</header>
+	<!-- Основное содержание страницы -->
+	<main class="main">
+		<!-- Секция описывающая бронирования -->
+		<section class="content__section">
+			<h2 class="heading_1">Алгоритм бронирования</h2>
+			<p class="p1">Чтобы воспользоваться услугами компании необходимо:</p>
+			<ol class="algorithm">
+				<li>Выбрать дату и время съемки;</li>
+				<li>Выбрать количество участников;</li>
+				<li>Выбрать желаемую локацию для съемки, соответствующую условиям выше;</li>
+				<li>Зарезервировать конкретные зоны на территории выбранной локации;</li>
+				<li>Определить перечень дополнительных услуг;</li>
+				<li>Оформить заказ.</li>
+			</ol>
+		</section>
+
+		<!-- Секция, содержащая информацию о компании -->
+		<section class="content__section">
+			<h2 class="heading_2">Информация о компании</h2>
+			<p class="p2">
+			<span class="motto">
+				Главная цель компании 
+			</span> – сохранить самые яркие моменты жизни клиентов на долгие годы. </p>
+			<p class="p3"><span class="motto">Девиз компании «Фокус» </span> - Сделай жизнь ярче!</p>
+			<div class="rewiews">
+				<h3>Отзывы клиентов</h3>
+				<div class="rewiew__item__1">
+					<h4>Алина</h4>
+					<img src="images/people/7.jpg" alt="Алина" >
+					<p>Спасибо большое! Локация "Черная жемчужина" просто супер! Все в бурных эмоциях, фото получились просто огонь!
+					</p>
+				</div>
+				<div class="rewiew__item__2">
+					<h4>Марина</h4>
+					<img src="images/people/8.jpg" alt="Марина">
+					<p>Долго думала как отпразновать годовщину свадьбы. Увидела фото ваших локаций и влюбилась!
+					Отлично провели время с мужем, сделали кучу фото для инстаграмма и даже распечатали несколько на память)
+					</p>
+				</div>
+				<div class="rewiew__item__3">
+					<h4>Алена и Ко</h4>
+					<img src="images/people/9.jpg" alt="Алена и Ко">
+					<p>Всё очень понравилось. 
+						Воспользовались с девочками услугами вашего фотографа Ильи, теперь фотаемся только у него!
+					</p>
+				</div>
+				<div class="rewiew__item__4">
+					<h4>Наталия</h4>
+					<img src="images/people/10.jpg" alt="Наталья">
+					<p>Уже не первый раз устраиваю себе праздник, организуя фотосессию в ваших локациях. Не дорого, а эмоций на весь день
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Форма поиска -->
+		<section class="content__section" id="search">
+			<h2 class="heading_3">Поиск</h2>
+			<form action="search.html" method="POST" class="search_form">
+				<label for="location">Выбор региона:</label>
+				<select id="location" required>
+					<option value="Altaiskii_krai">Алтайский край</option>
+					<option value="Krasnoyarskii_krai">Красноярский край</option>
+				</select>
+				<label for="date_shot">Дата съёмки</label>
+					<input type="date" name="date" id="date_shot" required>
+				<label for="time_shot">Время съёмки</label>
+					<input type="time" name="time" id="time_shot">
+				<label for="count_members">Количество участников</label>
+					<input type="number" name="members" id="count_members" min="1" max="5" required>
+				<button type="submit" class="btn">Поиск</button>
+			</form>
+			
+		</section>
+
+		<!-- Акции -->	
+		<section class="content__section" id="promotions">
+			<h2 class="heading_4">Акции</h2>
+			<div class="promotions_item__1">
+				<img src="images/promotions/promotion1.jpg" alt="Акция_1">
+				<h4 class="promotions_item__headline">Скидка до 60%. За заказ зоны (до 5 человек) в локации «Черная жемчужина»</h4>
+				<p class="promotions_item__description">
+					Устали от городского шума, хотите провести фотосессию за городом в живописной локации? Заказывайте место в локации «Черная жемчужина». 
+					<br>Здесь вас ждет настоящая пиратская шхуна с настоящими пиратами! Фото будут просто огонь!
+					<br>Заказ от 3 до 5 человек:
+					<br>— Скидка 40% на аренду при заказе в будний день
+					<br>Заказ от 3 до 5 человек + услуги фотографа:
+					<br>— Скидка 55% на аренду при заказе в будний день
+					<br>Купон действует в будние дни при наличии свободных мест
+				</p>
+				<div class="d">
+				<button class="promotions_item__button">Подробнее</button>
+				</div>
+			</div>
+			<div class="promotions_item__2">
+				<img src="images/promotions/promotion2.jpg" alt="Акция_2">
+				<h4 class="promotions_item__headline">Скидка до 51% при заказе услуг фотографа и использовании реквизита локации. Уютное место для организации детской фото-видео съемки «Поляна сказок»</h4>
+				<p class="promotions_item__description">
+					Локация «Поляна сказок» расположена в живописной загородной местности на берегу чистого озера. Есть места для организации фотосъемок как на открытом воздухе, так и под навесом с профессиональным оборудованием и реквизитом.
+					<br>Купон действует на следующие виды услуг:
+					<br>— Скидка 51% для аренды зоны в локации «Поляна сказок» при условии заказа услуг фотографа
+					<br>Преимущества заказа именно этой локации:
+					<br>— безопасность (территория локации является частной и охраняется);
+					<br>— мало людей (площадь — 200 кв. м);
+					<br>— защита от насекомых (территория кемпинга обработана от клещей);
+					<br>— обустроенный тематический лагерь, в котором можно сфотографироваться с любимыми персонажами сказок
+					<br>Обязательна предварительная запись по телефону.
+				</p>
+				<div class="d">
+				<button class="promotions_item__button">Подробнее</button>
+				</div>
+			</div>
+			<div class="promotions_item__3">
+				<img src="images/promotions/promotion3.jpg" alt="Акция_3">
+				<h4 class="promotions_item__headline">Скидка до 25%. Закажи праздник "Под ключ"</h4>
+				<p class="promotions_item__description">
+					При выборе локации для 5 человек и больше, а также при заказе всех дополнительных услуг можно очень неплохо сэкономить!
+					<br>Купон действует на следующие виды услуг:
+					<br>— Скидка 25% для органицации комплексного праздника для группы от 10 человек.
+					<br>— Скидка 10% для органицации комплексного праздника для группы от 5 человек.
+					<br>Обязательна предварительная запись по телефону.
+				</p>
+				<div class="d">
+				<button class="promotions_item__button">Подробнее</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Форма для подписки -->
+		<section class="content__section">
+			<h2 class="heading_5">Подписка на закрытые акции</h2>
+			<form method="POST" class="subscription">
+				<label for="email">Введите ваш Email</label>
+				<input type="email" name="e-mail" id="email">
+				<input type="checkbox" name="subscription" id="agree" checked class="checked">
+				<label for="agree">Соглашаюсь на подписку</label>
+				<button class="btn">Подписаться</button>
+			</form>
+		</section>
+	</main>
+	<!-- Подвал сайта -->
+	<footer>
+		<div class="copyright">
+			<p>&copy; Горшков С.С.</p>
+			<span>Телефон: 8 (800) 333-30-30</span>
+		</div>
+			<div class="footer_navigation">
+				<ul>
+					<li><a href="http://xxxxxx-m1.wsr.ru">Home</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/login">Login</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/signup">Sign up</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/contact">Contact</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/news">News</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/return">Return</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/feedback">Feedback</a></li>
+				</ul>		
+			</div>
+	</footer>
+</body>
+</html>

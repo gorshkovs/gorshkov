@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Страница ,бронирования</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<!-- -->
+	<header>
+		<div class="logo">
+			
+		</div>
+		<nav class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Главная</a>
+			<a href="booking.html">Управление бронированием</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>		
+		</nav>
+	</header>
+	
+	<main class="content">
+		<section class="content__section">
+			<h2 class="heading_1">Подтверждения бронирвоания</h2>
+			<form class="booking_form">
+				<fieldset class="fieldset_block1">
+					<legend>Данные о заказе</legend>
+					<label for="location_field">Регион</label>
+						<input type="text" name="region" id="location_field" value="Алтайский край" disabled>
+					<label for="address_field">Адрес локации</label>
+						<input type="text" name="address" id="address_field" value="Туристическая база &#171;,Озеро Красилово &#187;, Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1 " disabled>
+					<label for="zone_field">Выбранные зоны</label>
+						<input type="text" name="zone" id="zone_field" value="Шатёр" disabled>
+					<label for="date_shot">Дата съёмки</label>
+						<input type="text" name="date" id="date_shot" disabled value="26-09-2021">
+					<label for="time_shot">Время съёмки</label>
+						<input type="text" name="time" id="time_shot" disabled value="17:00">
+					<label for="count_members">Кол-во участников</label>				
+						<input type="number" name="members" id="count_members" value="3" disabled>
+					<label for="cost_field">Стоимость</label>
+						<input type="text" name="cost" id="cost_field" value="1000 р." disabled>	
+				</fieldset>
+
+				<fieldset class="fieldset_block2">
+					<legend>Выбор дополнительных услуг</legend>
+					<input type="checkbox" name="photograf" id="photo_field" checked>
+						<label for="photo_field">Услуги фотографа - 2000 р/час</label>
+					<input type="checkbox" name="filming" id="filming_field" checked>
+						<label for="filming_field">Реквизит для съёмок - 500 р/час</label>
+					<input type="checkbox" name="photo-props" id="photo-props_field" >
+						<label for="photo-props_field">Моментальная печать фотографии - 50 р/шт</label>
+					<input type="checkbox" name="taxi" id="taxi_field" checked>
+						<label for="taxi_field">Услуги такси - 50  р + 10 р за каждый км </label>
+				</fieldset>
+			</form>
+			</section>
+			<section class="content__section">
+			<form class="booking_form2">
+					<label for="comment_field">Дополнительный комментарий к заказу</label>
+					<textarea id="comment_field" name="comment"></textarea>
+					<label for="email_field">Ваш email</label>
+					<input type="email" name="email" id="email_field">
+					<label for="tatal-cost_field">Стоимость</label>
+						<input type="text" name="total-cost" id="total-cost_field" value="3500 р."> 
+			</form>
+		</section>
+		
+	</main>
+
+	<footer>
+		<div class="copyright">
+			<p>&copy; Горшков С.С.</p>
+			<span>Телeфон: 8 (800) 333-30-30</span>
+		</div>
+			<div class="footer_navigation">
+				<ul>
+					<li><a href="http://xxxxxx-m1.wsr.ru">Home</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/login">Login</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/signup">Sign up</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/contact">Contact</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/news">News</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/return">Return</a></li>
+					<li><a href="http://xxxxxx-m1.wsr.ru/feedback">Feedback</a></li>
+				</ul>		
+			</div>
+	</footer>
+</body>
+</html>
